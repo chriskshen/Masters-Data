@@ -1,6 +1,5 @@
 1. Course Introduction    
-2. Introduction to Data Visualization
-and Tableau   
+2. Introduction to Data Visualization and Tableau   
 3. Connecting to various Data Sources   
 and Preparing Data   
 4. Working with Metadata   
