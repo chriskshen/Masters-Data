@@ -1,0 +1,16 @@
+## Bing
+To install dbt, you can follow the steps below:
+- Install Python from python.org and check the option to add it to the system path variable.
+- Install Visual Studio Code and the Python and DBT extensions.
+- Create a Python virtual environment and activate it.
+- Install DBT with the pip install dbt-data_platform command, where data_platform is the name of your data platform, such as Snowflake.
+- Create a DBT folder in the user home directory and initialize a project with the dbt init command.
+- Edit the dbt_project.yaml and profiles.yaml files to configure the project name, version, target database profile and connection details.
+- Use the dbt debug command to verify the connectivity between DBT and your data platform.
+- Create a DBT model in the models folder using SQL queries with common table expressions (CTEs).
+- Use the dbt run command to execute the model and create a view or a table in your data platform.
+- Verify the results in your data platform and use reporting tools to access the data.
+You can also refer to the following resources for more detailed instructions:
+- dbt documentation
+- dbt YouTube channel
+I hope this helps! Let me know if you have any other questions. 😊
