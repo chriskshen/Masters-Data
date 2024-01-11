@@ -1,0 +1,21 @@
+DBT, or Data Build Tool, is an open-source software tool that enables data analysts and engineers to transform data in their warehouse more effectively. It follows a modular and version-controlled approach to transform raw data in your data warehouse into meaningful business insights.
+
+Key Features and Concepts:
+Transformation Logic:
+
+DBT focuses on transforming raw data into analysis-ready tables or views. Transformation logic is expressed in SQL, and transformations are treated as modular components.
+Modularity:
+
+Transformations are organized into modular SQL files. Each file typically represents a specific logical transformation, making it easy to manage and understand.
+Version Control:
+
+As with code, transformations in DBT are version-controlled. This means that changes to your data models can be tracked over time, facilitating collaboration and reducing the risk of errors.
+Dependency Management:
+
+DBT automatically manages dependencies between different models. If Model B depends on Model A, DBT ensures that Model A is built first before Model B.
+Incremental Builds:
+
+DBT supports incremental builds. When you run DBT, it only transforms the data that has changed since the last run, saving processing time.
+Testing and Documentation:
+
+DBT provides testing and documentation functionalities. You can write tests to ensure the quality of your data and document your transformations for better understanding.
