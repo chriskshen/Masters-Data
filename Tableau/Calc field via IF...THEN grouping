@@ -1,0 +1,4 @@
+IF [Sales] >= 100000 THEN 'High Sales'
+ELSEIF [Sales] >= 50000 THEN 'Medium Sales'
+ELSE 'Low Sales'
+END
