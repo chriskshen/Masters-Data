@@ -25,12 +25,14 @@ Tableau - Numeric Calculations
 Tableau - String Calculations
 Tableau - Date Calculations
 Tableau - Table Calculations
+
 Tableau - LOD Expressions
 Types of LOD= FIXED/INCLUDE/EXCLUDE
 FIXED Level of Detail Expressions
 Regional_Sales={FIXED[Region]:SUM([Sales])}  (Sales GROUPBY Region)
 INCLUDE Level of Detail Expressions
 INCLUDE Level of Detail Expressions
+
 Tableau - Basic Sorting
 Tableau - Basic Filters
 Tableau - Quick Filters
