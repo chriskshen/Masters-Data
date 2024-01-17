@@ -1,0 +1,164 @@
+Tableau – Overview
+Tableau Features
+Tableau - Environment Setup
+Tableau - Get Started
+Tableau – Navigation
+Tableau - Design Flow
+Tableau - File Types
+Tableau - Data Types
+Tableau - Show Me
+Tableau - Data Sources
+Tableau - Custom Data View
+Tableau - Extracting Data
+Tableau - Fields Operations
+Tableau - Editing Metadata
+Tableau - Data Joining
+Tableau - Data Blending
+Tableau - Add Worksheets
+Tableau - Rename Worksheet
+Tableau - Save & Delete Worksheet
+Tableau - Reorder Worksheet
+Tableau - Paged Workbook
+Tableau – Operators
+Tableau – Functions
+Tableau - Numeric Calculations
+Tableau - String Calculations
+Tableau - Date Calculations
+Tableau - Table Calculations
+Tableau - LOD Expressions
+Types of LOD= FIXED/INCLUDE/EXCLUDE
+FIXED Level of Detail Expressions
+Regional_Sales={FIXED[Region]:SUM([Sales])}  (Sales GROUPBY Region)
+INCLUDE Level of Detail Expressions
+INCLUDE Level of Detail Expressions
+Tableau - Basic Sorting
+Tableau - Basic Filters
+Tableau - Quick Filters
+Tableau - Context Filters
+Tableau - Condition Filters
+Tableau - Top Filters
+Tableau - Filter Operations
+
+Tableau - Bar Chart    
+Simple Bar Chart
+Columns=Sum(Profit)/ Rows=Sub-Category 
+Bar Chart with Color Range
+Columns=Sum(Profit)/ Rows=Sub-Category/ Color=Sum(Profit)   
+Color palette
+Try 'reset cards' in Worksheet/show cards; Move to a desired position  
+Stacked Bar Chart  
+Columns=Sub-Category/ Rows=Sum(Profit)/ Color=Segment  
+
+Tableau - Line Chart
+Marks=Line
+Simple Line Chart
+Columns= Ship Mode/ Rows= Sum(Sales)/ Marks=Line
+Multiple Measure Line Chart
+Columns= Ship Mode/ Rows= Sum(Sales) AVG(Discount)/ Marks=Line
+Line Chart with Label
+Columns= Ship Mode/ Rows= Sum(Sales)/ Marks=Line/ Label=AVG(Profit Ratio*100%)
+
+Tableau - Pie Chart
+Marks=Pie
+Simple Pie Chart
+Dimension(Region)=Color=Label/ Measure(Profit)=Size/ Marks=Pie
+Drill-Down Pie Chart
+Dimension(Sub-Category(?Manufacturer Product Name))=Color=Label/ Measure(Profit)=Size/ Marks=Pie
+
+Tableau – Crosstab (Text Table)
+Simple Crosstab
+Col=Dimension(OrderDate)/ Row=Dimension(Region,Segment)/ Label,Text=Measure(Sales)
+Crosstab - Color Encoded
+Col=Dimension(OrderDate)/ Row=Dimension(Region,Segment)/ Label,Text =Measure(Sales)/ Color=Measure(Sales)
+Crosstab with Row Percentage
+Col=Dimension(OrderDate)/ Row=Dimension(Region,Segment)/ Label,Text =Measure(Sales)/ Color=Measure(Sales) … Edit,Quick table calc=TabAcross=%ofTotal
+
+Tableau - Scatter Plot
+Simple Scatter Plot
+Cols=measure.sumSales/ Rows=measure.sumProfit/ Label=dimensionSub-Category
+Scatter Plot - Color Encoded
+Cols=measure.sumSales/ Rows=measure.sumProfit/ Label=dimensionSub-Category/ Color=dimensionSub-Category
+Drill-Down Scatter Plot
+Cols=measure.sumSales/ Rows=measure.sumProfit/ Label=dimensionSub-Category/ Color=dimensionSub-Category=ProductName ?Manufacturer
+
+Tableau - Bubble Chart
+Simple Bubble Chart
+Marks=Circle/ measure.sumProfit=Size/ dimensionShipMode=Label/ dimensionShipMode=Color
+Bubble Chart with Measure Values
+Marks=Circle/ measure.sumProfit=Size/ dimensionShipMode=Label/ dimensionShipMode=Color/ measure.sumSales=Label/ /FormatCurrencyStandard=$
+Bubble Chart with Measure Colors
+Marks=Circle/ measure.sumProfit=Size/ dimensionShipMode=Label/ dimensionShipMode=Color/ measure.sumSales=Label/ /FormatCurrencyStandard=$
+measure.sumSales=Color
+
+Tableau - Bullet Graph
+Creating Bullet Graph
+dimensionSub-Category=Col/ measures(Profit Sales)=Rows/ ShowMe=|||Bullet/ //Sales=MarksCard/Detail
+
+Tableau - Box Plot (box-and-whisker plots)
+Creating a Box Plot
+dimensionCategory,ShipMode=Columns/ measureProfit=Rows/ ShowMe=Box-and-WhiskerPlot/ //ShipMode=MarksCard/Detail
+Box Plot with Two Dimensions
+dimensionCategory,ShipMode=Columns/ measureProfit=Rows/ ShowMe=Box-and-WhiskerPlot/ //ShipMode=MarksCard/Detail
+dimensionCategory,(ShipMode,)Region=Columns
+
+Tableau - Tree Map
+Creating a Tree Map
+measureProfit=Size=Color/ dimensionShipMode=Label/ ShowMe=TreeMap
+Tree Map with Two Dimensions
+measureProfit=Size=Color/ dimensionShipMode=Label/ ShowMe=TreeMap/
+dimensionRegion=Color=Label
+
+Tableau - Bump Chart
+Creating a Bump Chart
+dimensionSub-Category=Cols/ dimensionShipMode=Color/ Marks=Line/
+Rank=index()=ConvertToDiscrete=Rows…EditTabCalc=ComputeUsingSpecificDimensions=Sub-Category,ShipMode|SortOrder=CustomSort=Custom(ProfitSum)
+
+Tableau - Gantt Chart
+Creating a Gantt Chart
+dimensionOrderDate.exactdate|Continuous=Columns/ dimensionSub-Category=Rows/ dimensionOrderDate=Filters.Continuous|RangeOfDate/ dimensionShipMode=Color/ measureQuantity=Size
+
+Tableau – Histogram
+Creating a Histogram
+MeasureQuantity=Rows/ ShowMe=Histogram/ 
+//Columns=Quantity(bin)/ Rows=CNT(Quantity)
+Creating a Histogram with Dimension (stacked histogram)
+MeasureQuantity=Rows/ ShowMe=Histogram/ DimensionRegion=Color/
+//Columns=Quantity(bin)/ Rows=CNT(Quantity)
+
+Tableau - Motion Charts
+Creating a Motion Chart
+DimensionOrderDate=Columns(Year)=Pages(Month)/ measureProfit=Rows/ Marks=Auto,Line,…/ ShowHistory=Checked,Play,DropDown=LoopPlayBack
+
+Tableau - Waterfall Charts
+Creating a Waterfall Chart
+DimensionSub-Categor=Columns/ MeasureSales=Rows/ SortSales=Asc/ RowSalesTabCalc=RunningTotal/ Marks=GanttBar/ -Sales=-[Sales]=Size/
+Waterfall Chart with Color
+DimensionSub-Categor=Columns/ MeasureSales=Rows/ SortSales=Asc/ RowSalesTabCalc=RunningTotal/ Marks=GanttBar/ -Sales=-[Sales]=Size/ MeasureSales=Color/ Sort[Sub-Category]=DataSourceOrder,Alphabet,Nested,…
+
+Tableau – Dashboard
+Creating a Dashboard
+AddMasterWksht= Sales_Profits: dimensionSegment=Cols/ dimensionSub-Category=Rows/ measureSales=Color/ measureProfit=Size/
+Add2ndWkSht= Sales_state: dimensionState=Rows/ measureSales=Cols/ SortState=NestedSumSalesDesc/ 
+AddDashbd= Profit_Dashboard: SelectWkShts/
+FiltersInWkShts: ItemShts---Linked
+
+Tableau – Formatting
+Select/RightClick/FormatTab
+Formatting the Axes
+Change the Font
+Change the Shade and Alignment
+Format Borders
+
+Tableau – Forecasting
+exponential smoothing
+Creating a Forecast
+LineChart/ OrderDate=Cols/ Sales=Rows/ AnalyticsModel=Forcast/ RightClick=ForecastOption=Until2years/ Model=Automatic/ MissingValueFiledWithZero,95%=Checked/
+Describe Forecast
+RightClick=DescribeForecast
+
+Tableau - Trend Lines
+Options=Linear, Logarithmic, Exponential, and Polynomial
+Creating a Trend Line
+LineChart/ OrderDate=Cols/ Sales=Rows/ AnalyticsModel=TrendLine/
+RightClick=EditTrendLineOption=Linear
+Describe the Trend Line
