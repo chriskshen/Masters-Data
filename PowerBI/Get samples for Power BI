@@ -6,4 +6,5 @@ https://www.wiley.com/en-us/Teach+Yourself+VISUALLY+Power+BI-p-9781119903796
 
 https://media.wiley.com/product_ancillary/77/11199037/DOWNLOAD/TYVPowerBI-code.zip
 
-Note: Open extracted pbix file with MS BI Desktop, then cancel email input.
+Note for pbix files: Open extracted pbix file with MS BI Desktop, then cancel email input.
+Go to the error and settings. Browse for the missing Excel file and double-click on the Table in the desired sheet.
