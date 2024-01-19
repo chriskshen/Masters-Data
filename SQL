@@ -1,0 +1,8 @@
+SELECT column1, column2
+FROM table1
+JOIN table2 ON table1.id = table2.id
+WHERE condition1
+GROUP BY column1
+HAVING condition2
+ORDER BY column1 ASC
+LIMIT 10;
