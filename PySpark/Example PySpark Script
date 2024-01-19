@@ -1,0 +1,19 @@
+from pyspark.sql import SparkSession
+
+# Create a Spark session
+spark = SparkSession.builder.appName("SimpleApp").getOrCreate()
+
+# Load data
+df = spark.read.csv("your_data.csv", header=True, inferSchema=True)
+
+# Transformation
+transformed_df = df.select("column1", "column2").filter(df["column3"] > 100)
+
+# Action
+result = transformed_df.collect()
+
+# Write results
+transformed_df.write.parquet("output_data.parquet")
+
+# Stop the Spark session
+spark.stop()
