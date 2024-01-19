@@ -1,0 +1,27 @@
+import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.spark.sql.functions._
+
+// Create a Spark session
+val spark = SparkSession.builder.appName("LargeDatasetProcessing").getOrCreate()
+
+// Read a large CSV file into a DataFrame
+val filePath = "path/to/your/large_file.csv"
+val df: DataFrame = spark.read
+  .option("header", "true") // Assuming your CSV has a header
+  .csv(filePath)
+
+// Show the first few rows of the DataFrame
+df.show()
+
+// Perform operations on the DataFrame
+val resultDF: DataFrame = df
+  .select("column1", "column2")
+  .filter(col("column3") > lit("value"))
+  .groupBy("column1")
+  .agg(mean("column2").alias("avg_column2"))
+
+// Show the result
+resultDF.show()
+
+// Stop the Spark session
+spark.stop()
