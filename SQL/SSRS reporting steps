@@ -1,0 +1,10 @@
+Generate new report project in Visual Studio
+Generate new report in the report project
+Open the new report with the Design/Preview and Report Data
+Make sure the SQL Server instance is added to Visual Studio
+Add the SQL Server to the Data Source by entering the server name from SSMS inin Build window (in data source property)
+Select or enter the desired database name into the same window
+Add Dataset embedded in report with query.
+Insert table in the Design and drag desired fields into the table and Preview
+Right click the project or report in Visual Studio to build and then Deploy
+Check report in Preview and in Report Service Or Report Portal window
