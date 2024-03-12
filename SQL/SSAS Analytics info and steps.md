@@ -3,6 +3,6 @@ SQL Server Analysis Services (SSAS) Tutorial [https://www.mssqltips.com/sqlserve
 [[ 3.1 HOURS ]] SSAS Complete Tutorial - End to End - SQL Server Analysis Service [https://www.youtube.com/watch?v=RWtfutxe4zc]      
 Introduction to SQL Server Analysis Services - SSAS Tutorial (1/15) [https://www.youtube.com/watch?v=0YY7_k-Asmk]     
 
-
+[[ 3 HOURS ]] Data Warehouse Complete Tutorial - SQL + SSIS + SSAS + Power BI - { End to End } [https://www.youtube.com/watch?v=eNxbMwUGl1g]                         
 
 
