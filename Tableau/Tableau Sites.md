@@ -1,0 +1,13 @@
+Tableau Public [https://id.tableau.com/]                    
+
+Sales analysis project by Devadutt M A [https://public.tableau.com/app/profile/devadutt.m.a/viz/Salesanalysisproject_17098735255150/SalesDaashboard]       
+Tableau Public [https://public.tableau.com/app/learn/community-resources]         
+[https://github.com/KawalpreetDeol/imdb-analysis]             
+[https://www.linkedin.com/posts/imdb-com_viz-tableau-imdb-activity-7128450415016247296-4bcn/]             
+[https://www.tableau.com/gallery/data-plus-movies]
+[https://trailhead.salesforce.com/users/strailhead/trailmixes/tableau-hands-on-challenges]
+[https://trailheadacademy.salesforce.com/my-learning]
+
+[https://medium.com/@ramyamunagala7102/imdb-data-analysis-using-tableau-f64f5bc05f62]               
+[https://leoniemwindari98.medium.com/tableau-case-study-imdb-dataset-ccb16c98825f]             
+Maven Analytics    [https://app.mavenanalytics.io/]             
