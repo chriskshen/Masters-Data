@@ -1,3 +1,5 @@
+Google Cloud Platform Full Course | Google Cloud Platform Tutorial | Cloud Computing | Simplilearn [https://www.youtube.com/watch?v=6VRatA0SAwE]                  
+
 https://aws.amazon.com/
 https://explore.skillbuilder.aws/learn
 https://aws.amazon.com/hpc/
