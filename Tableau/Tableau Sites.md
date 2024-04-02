@@ -1,5 +1,5 @@
 Tableau Public [https://id.tableau.com/]                    
-
+Tableau Full Course 2023 | Learn Tableau in 9 Hours | Tableau Tutorial for Beginners | Simplilearn [https://www.youtube.com/watch?v=HM81vShSlWY]             
 Sales analysis project by Devadutt M A [https://public.tableau.com/app/profile/devadutt.m.a/viz/Salesanalysisproject_17098735255150/SalesDaashboard]       
 Tableau Public [https://public.tableau.com/app/learn/community-resources]         
 [https://github.com/KawalpreetDeol/imdb-analysis]             
